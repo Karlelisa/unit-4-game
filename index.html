@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/javascript/game.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
+
+    <title>Crystal Collector</title>
+
+</head>
+
+<body>
+
+
+    <nav>
+        <h1>Crystal Collector</h1>
+    </nav>
+
+    <!-- The game instructions. -->
+    <!-- https://getbootstrap.com/docs/4.3/components/card/ -->
+
+    <div class="row">
+        <div class="col-md-2">
+            <p></p>
+        </div>
+        <div class="col-md-8">
+            <div class="card" class="first-box" style="height: 18rem;">
+                <div class="card-body">
+                    <h5>Collect crystals in the Eqyptian Queen Cleopatra's hidden temple.</h5>
+
+                    <p>*Inside Cleopatra's hidden temple, you will be given a random number (Number to Guess) at the
+                        start of the game.</p>
+                    <p>*There are four large crystals below. By clicking on a cyrstal you will add a specific amount of
+                        points
+                        to your
+                        total score.</p>
+                    <p> *You win the game by matching your total score to the random number. You lose the game if your
+                        total
+                        score goes above the random number.</p>
+                    <p>*The value of each crystal is hidden from you until you click on it.</p>
+                    <p> *Each time when the game starts, the game will change the values of each crystal.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <p></p>
+        </div>
+    </div>
+
+
+
+
+    <!-- The random number to guess board and the wins and losses score board -->
+    <!-- https://getbootstrap.com/docs/4.3/components/card/ -->
+    <div class="row">
+        <div class="col-md-3">
+            <p></p>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card" style="width: 22rem; height: 8rem">
+                <div class=" card-body">
+                    <h2 class="card-title">Number to Guess: <span id="number-to-guess"></span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 20rem; height: 8rem">
+                <div class="card-body">
+                    <div class="score-board">
+                        <h4>Wins:<span id="wins"></span></h4>
+                        <h4>Losses: <span id="losses"></span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <p></p>
+        </div>
+    </div>
+
+
+    <!--The Crystals-->
+    <!-- https://getbootstrap.com/docs/4.3/components/card/ -->
+    <div class="row">
+        <div class="col-md-4">
+            <p></p>
+        </div>
+        <div class="col-md-6">
+            <div class="card" class="crystal-row" style="width:45rem">
+                <div class="card-body">
+                    <div id="crystals">
+                        <img class="crystal-image" src="assets/images/pink-crystal.jpg" alt="crystals" value="pink"
+                            id="pinkCrystal">
+                        <img class="crystal-image" src="assets/images/teal-crystal.jpg" alt="crystals" value="teal"
+                            id="tealCrystal">
+                        <img class="crystal-image" src="assets/images/purple-crystal.jpg" alt="crystals" value="purple"
+                            id="purpleCrystal">
+                        <img class="crystal-image" src="assets/images/blue-crystal.jpg" alt="crystals" value="blue"
+                            id="blueCrystal">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <p></p>
+        </div>
+    </div>
+
+
+
+    <!-- The Your Total Score Board                    -->
+    <!-- https://getbootstrap.com/docs/4.3/components/card/ -->
+    <div class="row">
+        <div class="col-md-4">
+            <p></p>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="max-width: 23rem; height: 5rem;" class="last-box">
+                <div class="card-title" class="total-score" class="text-center">
+                    <h4>Your total score is:<span id="crystal-score"></span></h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <p></p>
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: 'Grenze', serif;
+  font-size: 50px;
+   
+}
+
+h2 {
+  font-family: 'Grenze', serif;
+  font-size: 35px;
+ 
+}
+
+h4 {
+  font-family: 'Grenze', serif;
+  font-size: 27px;
+}
+
+h5 {
+  text-align: center;
+  font-family: 'Grenze', serif;
+  font-size: 25px;
+  color:   crimson;
+  font-weight: bold;
+}
+
+
+.first-box{
+  margin-bottom: -50px;
+}
+
+
+body { 
+  /* I found the below image on the following site: https://images.app.goo.gl/KxknADUJ1e6ETwUt6*/
+  background-image: url("../images/neon-hidden-temple.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500%;
+}
+
+/* The border and margins for all of the cards */
+.card {
+  margin-bottom: 10px;
+  border: 2px solid crimson;
+}
+
+.card-image {
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+
+ 
+/* column that contains the crystals */
+.col-md-6{
+  left: -132px;
+  right: 150px;
+  
+} 
+
+
+.crystal-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-left: 45px;
+}
+
+.crystal-image:hover {
+  filter: brightness(150%); 
+} 
+ 
+
+.total-score{
+  padding-left: 50px; 
+} 
+
+#number-to-guess, #wins, #losses, #crystal-score {
+    font-family: 'Grenze', serif;
+    color:  crimson;
+    font-weight: bold;
+    font-size: 35px;
+  
+} 
+
