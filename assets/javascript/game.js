@@ -44,43 +44,50 @@ $(document).ready(function () {
       wins++
       $("#wins").text(wins);
       alert("You win!");
-      //$(resetGame());
+      /* $("#you-win").text("You WIN!!");
+      resetGame(); */
     }
 
     else if (counter >= randomNumber) {
       losses++
       $("#losses").text(losses);
       alert("You lose!!");
-      //$(resetGame());
+      /*    $("#you-loose").text("You Loose!!");
+         resetGame(); */
     }
 
-    //******NOTE: Set something like if wins or looses equal 5 then game over. Set a game reset function.******
+    //When wins or looses equal 5 then game over.
     /*  if (wins === 5 || losses === 5) {
        alert("Game Over!! Play again to collect more crystals");
-       $(gameOver());
+       gameOver();
      } */
 
 
     //This resets the game after you win or loose. It only resets the randomNumber, crystalvalues and the total score.
 
-    /*    $(function resetGame() {
-         randomNumber = " ";
-         crystalValue = " ";
-         counter = 0;
-   
-       }); */
+    /*  $(function resetGame() {
+       randomNumber = Math.floor(Math.random() * 120) + 19;
+ 
+    crystalValue= "",
+       counter = 0;
+       //$("#crystal-score").text();
+       $("#you-win").text();
+       $("#you-loose").text();
+ 
+     }); */
 
 
     //It is game over after the player wins 5 times or looses 5 times.
 
-    /* $(function gameOver() {
-      randomNumber = "";
-      crystalValue = "";
-      counter = 0;
-      wins = 0;
-      losses = 0;
+    /*  $(function gameOver() {
+       randomNumber = Math.floor(Math.random() * 120) + 19;
+       crystalValue = Math.floor(Math.random() * 12) + 1;
+       counter = 0;
+       wins = 0;
+       losses = 0;
+       $("#win-loose").text(); */
 
-    }); */
+    //});
     //$('#random-number').text(lotteryNumber)
 
   });

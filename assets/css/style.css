@@ -40,6 +40,17 @@ body {
   height: 500%;
 }
 
+#you-win{
+  color: blue;
+
+}
+
+#you-loose {
+  color:  red;
+
+}
+
+
 /* The border and margins for all of the cards */
 .card {
   margin-bottom: 10px;
