@@ -4,13 +4,11 @@ h1 {
   text-align: center;
   font-family: 'Grenze', serif;
   font-size: 50px;
-   
 }
 
 h2 {
   font-family: 'Grenze', serif;
   font-size: 35px;
- 
 }
 
 h4 {
@@ -40,16 +38,6 @@ body {
   height: 500%;
 }
 
-#you-win{
-  color: blue;
-
-}
-
-#you-loose {
-  color:  red;
-
-}
-
 
 /* The border and margins for all of the cards */
 .card {
@@ -67,8 +55,7 @@ body {
 /* column that contains the crystals */
 .col-md-6{
   left: -132px;
-  right: 150px;
-  
+  right: 150px; 
 } 
 
 
@@ -79,13 +66,13 @@ body {
     margin-left: 45px;
 }
 
-.crystal-image:hover {
+ .crystal-image:hover {
   filter: brightness(150%); 
-} 
+}   
  
 
 .total-score{
-  padding-left: 50px; 
+  padding-left: 50px;
 } 
 
 #number-to-guess, #wins, #losses, #crystal-score {
