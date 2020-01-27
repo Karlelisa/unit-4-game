@@ -12,6 +12,11 @@
 ### Built With
 HTML, CSS, Boostsrap, JQuery, JavaScript
 
+### GitHub Published Link
+Click on the below link to play.
+
+https://karlelisa.github.io/unit-4-game/
+
 ### Game Screenshot
 ![My Crystal Collector Game Cover Page](/assets/images/my-crystal-collector-game-cover-page.png) 
 
